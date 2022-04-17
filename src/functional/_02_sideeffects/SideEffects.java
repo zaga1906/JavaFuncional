@@ -1,4 +1,4 @@
-package prueba._02_sideeffects;
+package functional._02_sideeffects;
 
 import java.io.BufferedReader;
 import java.io.File;

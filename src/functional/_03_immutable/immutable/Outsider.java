@@ -1,4 +1,4 @@
-package prueba._03_immutable.immutable;
+package functional._03_immutable.immutable;
 
 import java.util.LinkedList;
 import java.util.List;

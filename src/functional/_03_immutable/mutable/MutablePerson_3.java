@@ -1,17 +1,21 @@
-package prueba._03_immutable.mutable;
+package functional._03_immutable.mutable;
 
 import java.util.List;
 
 /**
- * POJO comun. Incluye propiedades y metodos para acceder y modificar dichas propiedades
+ * Mas mejoras. Ahora nuestra lista de emails es final. Eso nos garantiza que nadie sobre escribe
+ * el valor de la propiedad y una vez creado siempre sera la misma lista.
+ *
+ * Eso deberia resolver el problema� cierto?
  */
-public class MutablePerson {
+public class MutablePerson_3 {
     private String firstName;
     private String lastName;
 
-    private List<String> emails;
+    private final List<String> emails;
 
-    public MutablePerson() {
+    public MutablePerson_3(List<String> emails) {
+        this.emails = emails;
     }
 
     public String getFirstName() {
@@ -34,13 +38,9 @@ public class MutablePerson {
         return emails;
     }
 
-    public void setEmails(List<String> emails) {
-        this.emails = emails;
-    }
-
     @Override
     public String toString() {
-        return "MutablePerson{" +
+        return "MutablePerson_3{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", emails=" + emails +

@@ -1,4 +1,4 @@
-package prueba._01_pure;
+package functional._01_pure;
 
 public class PureFunctions {
     /**

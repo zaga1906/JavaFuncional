@@ -1,4 +1,4 @@
-package prueba._03_immutable.mutable;
+package functional._03_immutable.mutable;
 
 import java.util.List;
 
